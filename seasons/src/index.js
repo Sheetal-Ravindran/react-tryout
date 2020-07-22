@@ -4,11 +4,9 @@ import ReactDom from 'react-dom';
 
 //Create react component
 class App extends React.Component{
-    constructor (props)
-    {
-        super (props);
-        this.state= {lat : null, errorMessage : ''};                
-    }
+    
+    //same as the code we did using constructor
+    state= {lat : null, errorMessage : ''};  
 
     componentDidMount()
     {       
