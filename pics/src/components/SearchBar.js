@@ -1,11 +1,18 @@
 import React from 'react';
 
-const SearchBar = () => {
+class SearchBar extends React.Component {
+  render() {
     return (
-        <div>
-            <input type='text'/>
-        </div>
+      <div className="ui segment">
+        <form className="ui form">
+          <div className="field">
+            <label>Image Search</label>
+            <input type="text" />
+          </div>
+        </form>
+      </div>
     );
-};
+  }
+}
 
 export default SearchBar;
