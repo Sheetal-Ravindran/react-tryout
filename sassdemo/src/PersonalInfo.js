@@ -19,7 +19,7 @@ class PersonalInfo extends React.Component {
     validateField(fieldName, value) {
 
       let backgroungColor = this.state.bgColor;
-      
+
       switch(fieldName) {
         case 'name':
             if (!value.match(/^[a-zA-Z ]*$/)) {
@@ -45,9 +45,7 @@ class PersonalInfo extends React.Component {
                 <label className="label" htmlFor="name">
                     Enter {this.props.lable} Name
                 </label>
-                <input id="name" type="text" name="name" value={this.state.name} onChange={this.onInputChange} value={this.state.name} style={{backgroundColor:this.state.bgColor}} />
-                <div style={{backgroundColor:'red'}}>{this.state.nameError}</div>   
-                                           
+                <input id="name" type="text" name="name" value={this.state.name} onChange={this.onInputChange} value={this.state.name} style={{backgroundColor:this.state.bgColor}} />                                      
             </div>                   
     );
 }
